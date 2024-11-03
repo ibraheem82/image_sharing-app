@@ -54,7 +54,7 @@ const options = {
         servers: [
             {
                 // url: `http://localhost:${process.env.PORT}`,
-                url: 'https://server-topaz-seven-37.vercel.app',
+                url: 'https://image-sharing-app-ivaa.onrender.com',
                 // url: "",
                 description: "Image Uploader API"
             }
@@ -77,7 +77,7 @@ app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs, { customCssUrl: CSS
 
 app.get("/", (req, res) => {
     // res.json(`Working fine.`)
-    res.send(`<a href="https://server-topaz-seven-37.vercel.app/api-docs">Swagger Documentation</a>`)
+    res.send(`<a href="https://image-sharing-app-ivaa.onrender.com/api-docs">Swagger Documentation</a>`)
 });
 
 app.use("/api", imageRoute);
